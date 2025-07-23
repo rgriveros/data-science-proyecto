@@ -1,33 +1,86 @@
-# Proyecto Final - Curso Data Science 1
+# Proyecto Final – Data Science I: E-Commerce Analytics
+Este repositorio contiene el desarrollo completo del Proyecto Final del curso Data Science I en Coderhouse. Se abordan desde la exploración de datos hasta la construcción y evaluación de modelos predictivos para e-commerce.
 
-Este repositorio contiene el desarrollo completo del Proyecto Final para el curso **Data Science 1** de Coderhouse.
+## Descripción
+El objetivo es analizar un dataset transaccional de comercio electrónico y:
+Explorar la calidad de datos, patrones y relaciones clave.
+Formular hipótesis sobre devoluciones, descuentos y satisfacción del cliente.
+Implementar un pipeline de preprocesamiento y selección de características.
+Entrenar y evaluar modelos de regresión (valor de la orden) y clasificación (solicitud de devolución).
+Generar conclusiones accionables para decisiones de negocio.
 
-## Descripción del Proyecto
-Este proyecto de Data Science aplicado al comercio electrónico busca analizar un conjunto de datos transaccionales de una tienda en línea con el objetivo de construir un pipeline predictivo completo. Utilizamos información como el valor de la orden (order_value), los descuentos aplicados, calificaciones de clientes, fecha de compra y características demográficas/geográficas del cliente.
+## Estructura del repositorio
+.
+├── data/
+│   ├── raw/           # CSVs originales
+│   └── processed/     # (opcional) datos limpios o transformados
+├── notebooks/
+│   └── ProyectoParteIII_RiverosLobos.ipynb  # Notebook principal
+├── environment.yml    # Entorno Conda reproducible
+├── requirements.txt   # Dependencias pip
+└── README.md          # Documentación de uso
 
-El análisis se estructura en dos partes principales:
+## Contenido del Notebook
+Imports y configuración
+Definición de paths (rutas relativas)
+Carga y limpieza de datos
+Análisis Exploratorio (EDA)
+Valores faltantes
+Univariado, bivariado y multivariado
+Preprocesamiento
+Selección de variables
+Modelado
+Regresión (order_value)
+Clasificación (return_requested)
+Ajuste de hiperparámetros
+Validación final y visualizaciones
+Conclusiones e insights de negocio
 
-### Parte I: Exploración de Datos (EDA), formulación de hipótesis, análisis de calidad de datos, outliers y relaciones clave entre variables.
+## Requisitos
+Python 3.10+
+Conda (Miniconda o Anaconda) o pip
 
-### Parte II / Parte III: Preprocesamiento, selección de características, construcción de modelos predictivos supervisados y evaluación de métricas.
+## Configurar el entorno
+### Con Conda
 
-## Objetivos
-Predecir el valor de la orden (order_value) en función de las características del cliente y la transacción.
+git clone https://github.com/rgriveros/data-science-proyecto.git
+cd data-science-proyecto
 
-Predecir la probabilidad de que un cliente solicite devolución del pedido (return_requested).
+### Crear el entorno
+conda env create -f environment.yml
 
-## Tecnologías utilizadas
+### o, si ya existe:
+conda env update -f environment.yml
 
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- Jupyter Notebooks
-- Git & GitHub
+conda activate ds1-proyecto
 
-## Estado actual
+### Con pip
 
-- ### Parte I completada (EDA y conclusiones preliminares)
-- ### Parte II/III en proceso
+git clone https://github.com/rgriveros/data-science-proyecto.git
+cd data-science-proyecto
 
-## 📫 Autor
+pip install -r requirements.txt
 
-- **Riveros Lobos Roddolfo Gabriel**
+### Ejecutar el Notebook
+Activar el entorno (Conda o pip).
+Lanzar Jupyter Lab/Notebook:
 
+jupyter lab
+Abrir notebooks/ProyectoParteIII_RiverosLobos.ipynb.
+
+Seleccionar Run All para reproducir el análisis completo.
+
+## Resultados Esperados
+Reporte de calidad de datos y patrones de negocio.
+Comparativa de desempeño con y sin selección de variables.
+Métricas de regresión: MAE, RMSE, R².
+Métricas de clasificación: accuracy, precision, recall, F1, ROC.
+Gráficos de importancia de variables y matrices de confusión.
+Conclusiones sobre descuentos, devoluciones y recomendaciones de marketing.
+
+### Licencia
+Este proyecto está bajo la licencia MIT.
+
+## Autor
+Rodolfo Gabriel Riveros Lobos
+rgriveroslobos@gmail.com
