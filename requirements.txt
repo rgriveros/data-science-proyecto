@@ -1,0 +1,15 @@
+﻿# Requisitos básicos
+pandas>=2.3.1
+numpy>=2.3.1
+matplotlib>=3.10.3
+seaborn>=0.13.2
+scikit-learn>=1.7.0
+
+# Jupyter
+jupyterlab>=4.4.4
+ipykernel>=6.29.5
+jupyter-contrib-nbextensions>=0.7.0
+
+# Utilidades adicionales
+mlxtend>=0.23.4        # si usas funciones de mlxtend (p.ej. plot_decision_regions)
+pillow>=11.3.0         # para manejo de imágenes en matplotlib, si lo usas
